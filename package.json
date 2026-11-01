@@ -16,6 +16,7 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "build:engine": "node scripts/build-engine.mjs",
+    "check:release-age": "node scripts/check-release-age.mjs package-lock.json mcp/package-lock.json",
     "preview": "vite preview",
     "deploy": "npm run build && npx --yes wrangler deploy",
     "test": "vitest run",
